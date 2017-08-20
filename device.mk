@@ -515,13 +515,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # miracast props
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.wfd.enable=1﻿
+    persist.debug.wfd.enable=1
 
 $(call inherit-product-if-exists, hardware/qcom/msm8994/msm8994.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8994/msm8994-gpu-vendor.mk)
 
-# copy wlan firmware
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4358/device-bcm.mk)
+# copy wlan configs
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
