@@ -457,4 +457,7 @@
 
     <!-- Keep chosen default camera app pinned in memory for faster launching -->
     <bool name="config_pinnerCameraApp">true</bool>
+
+    <!-- Wheter to enable doze always on -->
+    <bool name="config_enableDozeAlwaysOn">true</bool>
 </resources>
