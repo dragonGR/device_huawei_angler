@@ -103,6 +103,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 ifeq ($(HOST_OS),linux)
   ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
     ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
       WITH_DEXPREOPT := true
     endif
   endif
